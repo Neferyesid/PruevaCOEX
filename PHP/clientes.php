@@ -1,20 +1,4 @@
-<?php 
-include './conexion.php';
 
-
-if(isset($_GET['editar'])){
-    $editar=$_GET['editar'];    
-   
-    $user="select * from usuario where id=$editar";
-   
-    $usuario=mysqli_query($conex,$user);
-
-    
-    $p=mysqli_fetch_array($usuario);   
-    print_r($usuario);
-};
-
-?>
 
 <!DOCTYPE html>
 <html lang="Es">
